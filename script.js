@@ -1,7 +1,11 @@
 class BangunDatar {
-    constructor(luas, keliling) {
-        this.luas = luas;
-        this.keliling = keliling;
+    constructor(sisi, alas, panjang, lebar, tinggi, r) {
+        this.sisi = sisi;
+        this.alas = alas;
+        this.panjang = panjang;
+        this.lebar = lebar;
+        this.tinggi = tinggi;
+        this.r = r;
     }
 
     persegi(sisi) {
@@ -28,3 +32,6 @@ class BangunDatar {
         return `Luas = ${this.luas}, Keliling = ${this.keliling}`;
     }
 }
+
+const persegi1 = new BangunDatar(4);
+console.log(persegi1.persegi(4));
