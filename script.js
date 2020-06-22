@@ -8,30 +8,33 @@ class BangunDatar {
         this.r = r;
     }
 
-    persegi(sisi) {
-        this.luas = sisi * sisi;
-        this.keliling = 4 * sisi;
+    persegi() {
+        this.luas = this.sisi * this.sisi;
+        this.keliling = 4 * this.sisi;
         return `Luas = ${this.luas}, Keliling = ${this.keliling}`;
     }
 
-    persegiPanjang(panjang, lebar) {
-        this.luas = panjang * l;
-        this.keliling = 2 * panjang + 2 * lebar;
+    persegiPanjang() {
+        this.luas = this.panjang * this.lebar;
+        this.keliling = 2 * this.panjang + 2 * this.lebar;
         return `Luas = ${this.luas}, Keliling = ${this.keliling}`;
     }
 
-    segitigaSiku2(alas, tinggi) {
-        this.luas = (1 / 2) * alas * tinggi;
-        this.keliling = alas + tinggi + sqrt(alas * alas + tinggi * tinggi);
+    segitigaSiku2() {
+        this.luas = (1 / 2) * this.alas * this.tinggi;
+        this.keliling =
+            this.alas +
+            this.tinggi +
+            sqrt(this.alas * this.alas + this.tinggi * tinggi);
         return `Luas = ${this.luas}, Keliling = ${this.keliling}`;
     }
 
-    lingkarang(r) {
-        this.luas = Math.PI * r * r;
-        this.keliling = 2 * Math.PI * r;
+    lingkarang() {
+        this.luas = Math.PI * this.r * this.r;
+        this.keliling = 2 * Math.PI * this.r;
         return `Luas = ${this.luas}, Keliling = ${this.keliling}`;
     }
 }
 
 const persegi1 = new BangunDatar(4);
-console.log(persegi1.persegi(4));
+console.log(persegi1.persegi());
