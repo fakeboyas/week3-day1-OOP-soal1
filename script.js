@@ -1,3 +1,4 @@
+//soal1
 class BangunDatar {
     constructor(sisi, alas, panjang, lebar, tinggi, r) {
         this.sisi = sisi;
@@ -40,6 +41,7 @@ let soal1 = new BangunDatar(5, 4, 3, 8, 2, 7);
 console.log(soal1.persegi());
 console.log(soal1.lingkaran());
 
+//soal2
 class BangunRuang extends BangunDatar {
     constructor(panjang, lebar, tinggi, sisi) {
         super(panjang, lebar, tinggi, sisi);
